@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osama Phone - متجر الهواتف والساعات الذكية</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="logo">Osama Phone</div>
+            <div class="nav-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="#products">المنتجات</a>
+                <a href="#offers">العروض</a>
+                <div class="search-container">
+                    <input type="text" placeholder="بحث عن جوال...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </nav>
+        <div class="brands-bar">
+            <button onclick="filterBrand('samsung')">سامسونج</button>
+            <button onclick="filterBrand('iphone')">آيفون</button>
+            <button onclick="filterBrand('xiaomi')">شاومي</button>
+            <button onclick="filterBrand('lg')">إل جي</button>
+            <button onclick="filterBrand('huawei')">هواوي</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>أفضل الماركات في الهواتف والساعات الذكية في اليمن</h1>
+            <p>اكتشف تشكيلتنا الواسعة من أحدث الجوالات والساعات المنافسة في السوق</p>
+        </section>
+
+        <section id="products" class="brands-grid">
+            <div class="brand-card" onclick="location.href='products.html?brand=samsung'">
+                <img src="assets/images/samsung_logo.png" alt="Samsung">
+                <h3>سامسونج</h3>
+            </div>
+            <div class="brand-card" onclick="location.href='products.html?brand=iphone'">
+                <img src="assets/images/iphone_logo.png" alt="iPhone">
+                <h3>آيفون</h3>
+            </div>
+            <div class="brand-card" onclick="location.href='products.html?brand=xiaomi'">
+                <img src="assets/images/xiaomi_logo.png" alt="Xiaomi">
+                <h3>شاومي</h3>
+            </div>
+            <div class="brand-card" onclick="location.href='products.html?brand=lg'">
+                <img src="assets/images/lg_logo.png" alt="LG">
+                <h3>إل جي</h3>
+            </div>
+            <div class="brand-card" onclick="location.href='products.html?brand=huawei'">
+                <img src="assets/images/huawei_logo.png" alt="Huawei">
+                <h3>هواوي</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="about">
+                <h4>من نحن</h4>
+                <p>متجر Osama Phone، وجهتكم الأولى لأحدث الهواتف زالساعات الذكية في اليمن بأسعار منافسة وخدمة متميزة.</p>
+            </div>
+            <div class="contact">
+                <h4>تواصل معنا</h4>
+                <p><i class="fab fa-whatsapp"></i> +967776261314</p>
+                <p><i class="fab fa-telegram"></i> @osama_phone</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>جميع الحقوق محفوظة &copy; 2026 Osama Phone</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
